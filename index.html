@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 24</title>
+    <style>
+      .btn__open__modal,
+      .btn__close__modal {
+        padding: 0.5rem;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        border: 1px solid red;
+        border-radius: 5px;
+        background-color: rgb(93, 174, 245);
+        color: aliceblue;
+      }
+      .modal {
+        border: 1px solid grey;
+        border-radius: 0.5rem;
+        padding: 2rem;
+        text-align: center;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      .hidden {
+        display: none;
+      }
+
+      p {
+        opacity: 75%;
+      }
+      .theme {
+        padding-top: 35%;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn__open__modal">Open me Plz</button>
+
+    <div class="modal hidden">
+      <h2>This is a modal</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+        molestias esse magni pariatur repellat nesciunt quos molestiae earum sit
+        quod, non repudiandae nisi sint eius? Distinctio porro quis minima est.
+      </p>
+      <button class="btn__close__modal">Modal close</button>
+    </div>
+
+    <div class="theme">
+      <button class="inner__one">Day</button>
+      <button class="inner__two">Night</button>
+    </div>
+    <h1>To-Do List</h1>
+    <input type="text" class="todo__input" placeholder="Add your new task" />
+    <button class="add__btn">Add</button>
+    <ul class="todo__list">
+      <!-- added here -->
+    </ul>
+    <script src="./app.js"></script>
+  </body>
+</html>
